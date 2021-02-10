@@ -22,7 +22,7 @@ interface MissingTraitInterface {
      *
      * @return string
      */
-    public function getEndpoint() : string;
+    public function getThrow() : string;
 
     /**
      *
@@ -40,8 +40,8 @@ interface MissingTraitInterface {
 
     /**
      *
-     * @param string $endpoint
+     * @param string $throw
      * @return self
      */
-    public function setEndpoint(string $endpoint);
+    public function setThrow(string $throw);
 }
