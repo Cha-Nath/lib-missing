@@ -20,6 +20,12 @@ interface MissingTraitInterface {
 
     /**
      *
+     * @return string
+     */
+    public function getEndpoint() : string;
+
+    /**
+     *
      * @param [type] $missing
      * @return self
      */
@@ -31,4 +37,11 @@ interface MissingTraitInterface {
      * @return self
      */
     public function setMissings(array $missings);
+
+    /**
+     *
+     * @param string $endpoint
+     * @return self
+     */
+    public function setEndpoint(string $endpoint);
 }

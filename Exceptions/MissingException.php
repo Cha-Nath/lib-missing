@@ -9,5 +9,5 @@ class MissingException extends Exception {
 
     use MissingTrait;
 
-    public function __construct(array $missings) { $this->setMissings($missings); }
+    public function __construct(array $missings, string $endpoint = __CLASS__) { $this->setMissings($missings)->setEndpoint($endpoint); }
 }
